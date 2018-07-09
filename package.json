@@ -1,0 +1,33 @@
+{
+  "name": "@0x12b/dotty-cli",
+  "version": "1.0.4",
+  "description": "tool for managing dotfiles and rigging on macOS",
+  "main": "index.js",
+  "scripts": {
+    "dev:link": "(cd examples; node ../src/index.js link)",
+    "dev:install": "(cd examples; node ../src/index.js install)"
+  },
+  "bin": {
+    "dotty": "src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x12b/dotty-cli.git"
+  },
+  "keywords": [
+    "dotfiles",
+    "rigfiles",
+    "macos"
+  ],
+  "author": "simon aronsson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0x12b/dotty/issues"
+  },
+  "homepage": "https://github.com/0x12b/dotty#readme",
+  "dependencies": {
+    "clui": "^0.3.6",
+    "commander": "^2.16.0",
+    "node-emoji": "^1.8.1"
+  }
+}

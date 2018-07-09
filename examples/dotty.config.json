@@ -1,0 +1,80 @@
+{
+  "dotfiles": [{
+      "label": "vscode keybindings",
+      "source": "vscode.keybindings.json",
+      "target": "~/Library/Application\\ Support/Code/User/keybindings.json"
+    },
+    {
+      "label": "vscode user settings",
+      "source": "vscode.settings.json",
+      "target": "~/Library/Application\\ Support/Code/User/settings.json"
+    }
+  ],
+  "brews": [{
+      "name": "wget"
+    },
+    {
+      "name": "sshfs"
+    }
+  ],
+  "casks": [{
+      "name": "visual-studio-code",
+      "cask": "true",
+      "customCheck": "which code",
+      "extensionInstallCmd": "code --install-extension",
+      "extensions": [
+        "formulahendry.auto-rename-tag",
+        "ms-vscode.azure-account",
+        "vsciot-vscode.azure-iot-toolkit",
+        "coenraads.bracket-pair-colorizer",
+        "ms-vscode.cpptools",
+        "ms-vscode.csharp",
+        "msjsdiag.debugger-for-chrome",
+        "peterjausovec.vscode-docker",
+        "editorconfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "felipecaputo.git-project-manager",
+        "eamodio.gitlens",
+        "ms-vscode.go",
+        "esbenp.prettier-vscode",
+        "humao.rest-client",
+        "qinjia.seti-icons",
+        "cssho.vscode-svgviewer",
+        "eg2.tslint",
+        "adamhartford.vscode-base64",
+        "minhthai.vscode-todo-parser",
+        "tsumina.seti-theme"
+      ]
+    },
+    {
+      "name": "spotify",
+      "customCheck": "find /Applications/Spotify.app"
+    },
+    {
+      "name": "dropbox",
+      "customCheck": "find /Applications/Dropbox.app"
+    },
+    {
+      "name": "slack",
+      "customCheck": "find /Applications/Slack.app"
+    },
+    {
+      "name": "gitkraken",
+      "customCheck": "find /Applications/GitKraken.app"
+    },
+    {
+      "name": "osxfuse",
+      "prepare": "brew tap homebrew/cask",
+      "customCheck": "find /Library/PreferencePanes/OSXFUSE.prefPane"
+    },
+    {
+      "name": "font-fira-code",
+      "prepare": "brew tap caskroom/fonts",
+      "customCheck": "find ~/Library/Fonts/FiraCode-Regular.otf"
+    },
+    {
+      "name": "google-chrome",
+      "customCheck": "find /Applications/Google\\ Chrome.app"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  { "key": "cmd+shift+[SemiColon]", "command": "workbench.action.terminal.toggleTerminal"},
+  { "key": "cmd+shift+[SemiColon]", "command": "workbench.action.terminal.focus", "when": "!terminalFocus"},
+  { "key": "ctrl+shift+[BracketLeft]", "command": "workbench.action.terminal.new"},
+  { "key": "ctrl+shift+[Quote]", "command": "workbench.action.terminal.kill"},
+  { "key": "ctrl+shift+pageup", "command": "workbench.action.terminal.focusPrevious"},
+  { "key": "ctrl+shift+pagedown", "command": "workbench.action.terminal.focusNext"}
+]
